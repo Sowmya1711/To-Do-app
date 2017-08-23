@@ -1,0 +1,383 @@
+body
+{
+width: 960px; 
+margin: 0 auto;
+}
+
+.navigation
+{
+background-color:rgba(31, 29, 29, 0.83);
+width:960px;
+position:absolute;
+z-index:11;
+}
+
+.logo
+{
+height:50px;
+float:left;
+width: 100px;
+margin-top: 18px;
+margin-left: 21px;
+}
+
+.menu
+{
+width:700px;
+margin-left:230px;
+}
+
+
+ul 
+{
+list-style-type: none;
+margin: 10px;
+padding: 0;
+overflow: hidden;
+
+}
+
+
+li 
+{
+float: right;
+}
+
+
+li a
+{
+display: block;
+    	 color: white;
+    	 text-align: center;
+    	 margin-left:5px;
+    	 text-decoration: none;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 padding-left:20px;
+	 padding-right:20px;
+	 margin-top:10px;
+	 margin-bottom:10px;
+}
+
+li a:hover:not(.active) 
+{
+background-color: gray;
+         border-radius: 10px;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 padding-left:20px;
+	 padding-right:20px;
+	 margin-top:10px;
+	 margin-bottom:10px;
+	 
+}
+
+.active
+{
+background-color: gray;
+border-radius: 10px;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 padding-left:20px;
+	 padding-right:20px;
+	 margin-top:10px;
+	 margin-bottom:10px;
+	 
+}
+
+
+.bb 
+{
+width: 960px;
+height: 19px;
+position: relative;
+margin: -35px 1px -9px 0px;
+background-color: rgb(221, 221, 221);
+/* margin-top: -13px; */
+z-index: 11111;
+/* position: relative; */
+opacity: 0.3;
+}
+
+.image h3
+{
+color:#FFFFFF;
+position:absolute;
+display:block;
+font-size:30px;
+margin-top:-290px;
+margin-left:30px; 
+width:400px;  
+text-align:justify;       
+}
+	
+.buttonone
+{border:none;
+position:absolute;           
+margin-top:-130px;
+padding:10 20px;
+border-radius:5px;
+}
+.buttontwo
+{border:none;
+position:absolute;           
+margin-top:-130px;
+margin-left:230px;
+padding:10 20px;
+border-radius:5px;
+	}
+
+.Parent
+{
+background-color:white;
+width:960px;
+margin-top:20px;
+}
+.ChildOne
+{
+border:2px light blue;
+width:310px;
+float:left;
+margin-left:10px;
+}
+.ChildTwo
+{
+border:2px light blue;
+width:310px;
+
+float:left;
+margin-left:10px;
+}
+
+.ChildThree
+{
+border:2px gray;
+width:310px;
+
+float:left;
+margin-left:10px;
+}
+
+.clear         
+{ 
+background-color: both; 
+}
+
+.secondparent
+{
+background-color:white;
+width:960px;	
+}
+
+.secondleft
+{
+background-color:white;
+width:550px;
+float:left;
+box-shadow: 6px 0px 8px -5px rgba(128, 128, 128,0.54);
+margin-top:5px;
+}
+
+.h4
+{
+padding:10px;
+}
+
+.p
+{
+padding-left:10px;
+margin-top:-10px;
+}
+
+
+	
+.secondlefttwo{
+	width:370px;margin-left:15px;float:left;border-radius:20px;box-shadow:0px 0px 6px -1px grey;margin-bottom:30px;
+	}
+.imgleft
+{
+background-color: #FFFFFF;
+float:left;
+}
+.txtright{
+	width:230px;background-color: #cce6ff;float:left;border-radius:0px 15px 15px 0px;
+	}
+
+.clear{
+clear:both;
+}
+
+.buttonone button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:6px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+float:left;
+}
+.buttontwo button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:6px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+}
+.buttonone button:hover,
+.buttontwo button:hover
+{
+cursor:pointer;
+border:2px solid black;
+}
+
+.custButtonRight button:hover
+{
+cursor:pointer; 
+}
+
+.right
+{
+background-color:#FFFFFF;
+width:370px;
+float:left;
+
+margin-bottom:10px;
+padding-bottom:70px;
+}
+
+.right-text
+{
+background-color:#FFFFFF;
+width:370px;
+margin-bottom:10px;
+padding-bottom:70px;
+}
+
+.imgleft1
+{
+background-color:#ff99bb;
+width:70px;
+height:68px;
+float:left;
+border:2px solid gray;
+margin-top:8px;
+}
+
+.txtrightone
+{
+
+width:280px;
+float:left;
+margin-left:10px;
+}
+
+.imgleft2
+{
+background-color: #ffff4d;
+width:70px;
+height:68px;
+float:left;
+border:2px solid gray;
+margin-top:14px;
+}
+
+.txtright2
+{
+background-color:#FFFFFF;
+width:280px;
+float:left;
+margin-left:10px;
+}
+
+.foot
+{
+background: linear-gradient(to right, #2d7729, rgba(10, 145, 141, 0.26) , #32c4d3);
+width:960px;
+float:left;
+margin-top:-41px;
+}
+
+.colone
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+margin-top:30px;
+margin-bottom:10px;
+}
+
+.coltwo
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+margin-top:30px;
+margin-bottom:10px;
+}
+
+.colthree
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+margin-top:30px;
+margin-bottom:10px;
+}
+
+.colfour
+{
+width:220px;
+float:left;
+margin-left:20px;
+margin-top:30px;
+margin-bottom:10px;
+}
+
+
+
+.edittext
+{
+width:100px;margin-left:10px;padding:5px;
+}
+#grad1 
+{
+background: red; /* For browsers that do not support gradients */    
+background: -webkit-linear-gradient(left, #01AD01, #00B46B , #01B6ED); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, #01AD01, #00B46B , #01B6ED); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right,#01AD01, #00B46B , #01B6ED); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, #39f539, #4fce9a , #09b6ea);
+}
+#grad2 
+{
+background: linear-gradient(to bottom right, #90bb85,#39c137); 
+}
+
+#grad3 
+{
+ 	
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#FFFFFF, #e6e2e2,#867f7f); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#FFFFFF, #e6e2e2,#867f7f); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#FFFFFF, #e6e2e2,#867f7f); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#FFFFFF, #e6e2e2,#dad7d7); /* Standard syntax (must be last) */
+}
+#grad4
+{
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left top, #B4F7FF ,#8EEEFE, #3AE4FD); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom right, #B4F7FF ,#8EEEFE, #3AE4FD); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom right, #B4F7FF ,#8EEEFE, #3AE4FD); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to bottom right, #B4F7FF ,#8EEEFE, #3AE4FD); /* Standard syntax */
+}
+
+

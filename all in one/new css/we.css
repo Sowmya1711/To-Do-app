@@ -1,0 +1,67 @@
+.hjk h1
+{
+color:orange;
+}
+.aa h2
+{
+color:blue;
+}
+.bb h3
+{
+color:red;
+}
+
+body {
+    background-image: url("index.png");
+ background-repeat: no-repeat;
+background-position: left top;
+    margin-right: 100px;
+ background-attachment: fixed;
+}
+p.dotted {
+    border-style: dotted;
+ border-width: 5px;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;
+ border-width: 10px;}
+p.double {border-style: double;
+border-width: 2px 10px 4px 20px;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;
+border-color: green;}
+
+p.pp {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-color: red;
+border-left: 6px solid red;
+    background-color: lightgrey;
+}
+
+.dd h2 {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+
+
+.ee div {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+height: 200px;
+    width: 50%;
+}

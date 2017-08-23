@@ -1,0 +1,59 @@
+.container-fluid
+{
+width:100%;
+margin:0 auto;
+}
+
+.container
+{
+float:left;
+border-radius: 10px;
+background: gray;
+padding: 20px; 
+width: 30px;
+height: -0px;
+
+}
+
+li {
+    float: right;
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+
+}
+
+.active {
+    border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+text-align: center;
+
+}
+
+#grad1 {
+
+    height: 255px;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,  lightgreen, palegreen, lightblue); /* Standard syntax (must be last) */
+ 
+background-repeat: no-repeat;
+background-position: right center;
+
+}
+

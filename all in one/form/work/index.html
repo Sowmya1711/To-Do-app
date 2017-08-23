@@ -1,0 +1,147 @@
+<! doctype html>
+<html>
+<head>
+<title> First Script </title>
+<link rel="stylesheet" type="text/css" href="form/style.css">
+<script type="text/javascript">
+
+
+function validateForm()
+{	
+	
+
+
+	if (document.myForm.fName.value=="") {
+		alert("Please enter your first name");
+		document.myForm.fName.focus();
+		return false;
+	}
+
+	if ( document.myForm.lName.value=="") {
+		alert("Please enter your last name");
+		document.myForm.lName.focus();
+		return false;
+	}
+
+	if ( ( myForm.gender[0].checked == false ) && ( myForm.gender[1].checked == false ) ) {
+    	alert ( "Please choose your Gender: Male or Female" );     
+    	return false;
+	}
+
+
+    if (document.myForm.job.value=="0") {
+    	alert("Please choose type of job");
+    	return false;
+    	}  
+
+    if(document.myForm.jobLoc.value=="0") {
+    	alert("Please select your location");
+    	return false;
+    }
+
+    if(document.myForm.edu.value=="0"){
+    	alert("Please select your Qualification");
+    }
+
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.EMail.value))  
+    {  
+      return true;
+     }
+     {
+       alert("You have entered an invalid email address!");  
+       return false;
+      }  
+        
+}
+
+</script>
+</head>
+<body>
+<h1> <center> Registration Form for Job Seekers </center> </h1>
+
+<form name="myForm" action="" onsubmit="return (validateForm())" method="post">
+
+<table align="center" bgcolor="pink">
+
+	<tr>
+	 	<td><label>First Name </label></td>
+	 	<td><input type="text" name="fName" placeholder="first name" > <br></td>
+	</tr>
+
+	
+	<tr>
+		<td><label> Last Name </label> </td>
+		<td><input type="text" name="lName" placeholder="last name"> <br></td>
+	</tr>
+
+
+	<tr>
+		<td><label>Gender</label> </td>
+		<td><input type="radio" name="gender" value="male"> Male </td>
+		<td><input type="radio" name="gender" value="female"> Female</td>
+	</tr>
+
+
+	<tr>
+		<td><label> Type of Job </label></td>
+		<td> 
+			<select name="job">
+			<option value="0" selected> --Choose your designation--</option>
+			<option value="1"> Designer </option>
+			<option value="2"> Developer </option>
+			<option value="3"> Tester </option>
+			<option value="4"> Networking </option>
+			<option value="5"> Administrator </option>
+			</select> 
+		</td>
+	</tr>
+
+
+	<tr>
+		<td><label> Job Location </label></td>
+		<td> 
+			<select name="jobLoc">
+			<option value="0" selected> --Choose your location--</option>
+			<option value="1"> Chennai </option>
+			<option value="2"> Bangalore </option>
+			<option value="3"> Delhi </option>
+			<option value="4"> Hyderabad </option>
+			<option value="5"> Madurai </option>
+			</select> 
+		</td>
+	</tr>
+
+
+	<tr>
+		<td><label> Educational Qualification </label></td>
+		<td> 
+			<select name="edu">
+			<option value="0" selected> --Choose your Qualification--</option>
+			<option value="1"> B.Tech </option>
+			<option value="2"> M.Tech </option>
+			<option value="3"> MBA </option>
+			<option value="4"> MCA </option>
+			<option value="5"> Phd </option>
+			</select> 
+		</td>
+	</tr>
+
+	<tr>
+		<td><label>EMail</label></td>
+		<td><input type="text" name="EMail" placeholder="Email id"><br><br></td>
+	</tr>
+
+	<tr>
+		<td><label> Feedback : </label> </td>
+		<td><textarea name = "message" rows="5" cols="30" minlength="20" maxlength="150"> </textarea> </br> </br>
+	</tr>
+
+<tr> <td></td><td><center><input type="submit" value="submit"> </center> </td></tr>
+
+</table>
+
+
+</form>
+
+</body>
+</html>

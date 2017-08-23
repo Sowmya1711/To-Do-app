@@ -1,0 +1,264 @@
+body{
+    width: 960px; 
+    margin: 0 auto;
+    background-color:white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+log
+{
+float:left;
+   border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+
+}
+.active {
+    border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 45px;
+    height: -1px;
+text-align: center;
+}
+#grad1 {
+
+    height: 300px;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,  lightgreen, palegreen, lightblue); /* Standard syntax (must be last) */
+ 
+background-repeat: no-repeat;
+background-position: right center;
+}
+
+
+
+
+
+
+.Parent
+{
+background-color:white;
+width:960px;
+}
+.ChildOne
+{
+border:2px light blue;
+width:310px;
+float:left;
+}
+.ChildTwo
+{
+border:2px light blue;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.ChildThree
+{
+border:2px gray;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.clear         
+{ 
+background-color: both; 
+}
+
+.secondparent
+{
+background-color:white;
+width:960px;	
+}
+
+.secondleft
+{
+background-color:white;
+width:550px;
+float:left;
+border-right:1px solid black;
+
+}
+
+.h4
+{
+padding:10px;
+}
+
+.p
+{
+padding-left:10px;
+margin-top:-10px;
+}
+
+.secondlefttwo
+{
+background-color: #fff;
+width:350px;
+float:left;
+border:2px solid gray;
+border-radius:5px;
+padding:2px;
+}
+
+.imgleft
+{
+background-color: #FFFFFF;
+float:left;
+}
+
+.clear{
+clear:both;
+}
+
+.custButtonOne button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:20px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+float:left;
+}
+.custButtonSecond button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:20px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+}
+.custButtonOne button:hover,
+.custButtonSecond button:hover
+{
+cursor:pointer;
+border:2px solid black;
+}
+
+.custButtonRight button:hover
+{
+cursor:pointer; 
+}
+
+.right
+{
+background-color:#FFFFFF;
+width:380px;
+float:left;
+margin-left:15px;
+}
+
+.right-text
+{
+background-color:#FFFFFF;
+width:370px;
+margin-bottom:10px;
+padding-bottom:70px;
+}
+
+.imgleft
+{
+background-color:#ff99bb;
+width:70px;
+height:68px;
+float:left;
+}
+
+.txtrightone
+{
+background-color:#FFFFFF;
+width:280px;
+float:left;
+margin-left:10px;
+}
+
+.imgleft2
+{
+background-color: #ffff4d;
+width:70px;
+height:68px;
+float:left;
+}
+
+.txtright2
+{
+background-color:#FFFFFF;
+width:280px;
+float:left;
+margin-left:10px;
+}
+
+.foot
+{
+background: linear-gradient(to bottom, #94ff33 0%, #99ecff 100%);;
+width:960px;
+float:left;
+margin-top:20px;
+}
+
+.colone
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+}
+
+.coltwo
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+}
+
+.colthree
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+}
+
+.colfour
+{
+width:220px;
+float:left;
+margin-left:20px;
+}
+
+
+

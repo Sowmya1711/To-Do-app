@@ -1,0 +1,134 @@
+
+body{
+    margin:26px auto;
+    width:33%;
+    text-align:left;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1{
+    margin-top: -6%
+
+}
+
+.success h2{
+    margin:170px ;
+    width:33%;
+    text-align:left;
+    font-family: 'Open Sans', sans-serif;
+    color: green;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=code] {
+    width: 18%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=mnumber] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+input[type=submit] {
+    width: 51%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset] {
+    width: 47%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+.wholePart {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    width:80%;
+
+}
+#errorfirstname {
+    font-size: small;
+    color: red;
+    margin-left: 56%
+}
+#errorlastname {
+    font-size: small;
+    color: red;
+    margin-left: 56%
+}
+#erroremail {
+    font-size: small;
+    color: red;
+    margin-left: 40%
+}
+#errormobilenumber {
+    font-size: small;
+    color: red;
+    margin-left: 25%
+}
+#errorpassword {
+    font-size: small;
+    color: red;
+    margin-left: 56%
+}
+#errorconfirmpassword {
+    font-size: small;
+    color: red;
+    margin-left: 30%
+}
+#Loginsuccessful{
+    font-size: large;
+    color:Green;
+}

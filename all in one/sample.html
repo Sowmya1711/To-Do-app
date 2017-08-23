@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Design Two</title>
+    <style>
+	body{
+         width:960px;
+         margin:0 auto;
+        }
+        
+ 	.logo img{
+ 	 width:56px;
+  	height:50px;
+ 	margin-left:20px;
+  	}
+  	.custMenu ul{
+   	 list-style-type: none;
+    	 margin: 0;
+    	 padding: 0;
+         overflow: hidden;
+    	 
+  	}
+
+ 	li {
+          float: right;
+
+ 	}
+
+	li a {
+    	 display: block;
+    	 color: white;
+    	 text-align: center;
+    	 padding: 14px 16px;
+    	 text-decoration: none;
+	}
+	li a:hover {
+    	 background-color: gray;
+         border-radius: 10px;
+	 padding:14px 16px;
+	}
+
+	.imagePlaced h3{
+	  color:#FFFFFF;
+	  position:absolute;
+	  display:block;
+	  font-size:30px;
+          margin-top:-320px;
+          font-style:bold;
+          margin-left:30px; 
+	  width:400px;  
+	  text-align:justify;       
+ 	}
+	.custButtonOne{
+	  position:absolute;           
+          margin-top:-200px;
+	  padding:10 20px;
+	  border-radius:5px;
+	}
+	.custButtonSecond{
+          position:absolute;           
+          margin-top:-200px;
+	  margin-left:230px;
+	  padding:10 20px;
+	  border-radius:5px;
+	}
+	.mainContent{
+	background-color:#FFFFFF;
+	margin-top:-25px;
+		
+	}
+	.custMainContent{
+	width:960px;
+	background-color:white;
+	margin-top:20px;
+	}
+	.custMainContent .columnOne{
+	width:310px;
+	float:left;
+	margin-left:10px;
+	}	
+
+	.custMainContent .columnTwo{
+	width:310px;
+	float:left;
+	margin-left:5px;
+	}
+	
+	.custMainContent .columnThree{
+	width:310px;
+	float:left;
+	margin-left:5px;
+	}
+	.custMainContent .columnOne img,
+	.custMainContent .columnTwo img,
+	.custMainContent .columnThree img{
+	display: block;
+        margin: 0 auto;	
+	}
+	.custMainContent .columnOne p,.custMainContent .columnTwo p,
+	.custMainContent .columnThree p{
+	 margin-left:10px;
+	 text-align:justify;
+	 margin-right:10px;
+	}
+	.custSecondContent{
+	background-color:#fff;
+	width:960px;	
+	}
+	.contentLeft{
+	background-color:#FFFFFF;width:550px;float:left;margin-left:10px;border-right:1px solid gray;
+	}
+	.contentLeftTwo{
+	background-color: #fff;width:350px;float:left;border:2px solid gray;border-radius:5px;padding:2px;
+	}
+	.imageLeft{
+	background-color: #FFFFFF;float:left;
+	}
+	.custButtonOne button{
+	border:1px solid gray;border-radius:10px;margin-left:30px;margin-top:20px;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;
+	}
+	.custButtonSecond button{
+	border:1px solid gray;border-radius:10px;margin-left:30px;margin-top:20px;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;
+	}
+	.custButtonOne button:hover,
+	.custButtonSecond button:hover{
+	cursor:pointer;
+	border:2px solid black;
+	}
+	.custButtonRight button:hover{
+	cursor:pointer; 
+	}
+	.custNav{
+	background-color:rgba(0,0,0,0.7);width:960px;height:50px;position:absolute;
+	}
+	.logo{
+	width:260px;height:50px;float:left;
+	}
+	.custMenu{
+	width:700px;margin-left:230px;
+	}
+	.custFooter{
+	
+	}
+	.mainContent{
+	 
+ 	}
+    </style>
+ </head>
+ 
+ <body>
+    <header>
+	<div class="custNav" style="">
+  
+        <div class="logo" style="">
+  	   <img src="m5.png" alt="no image" width="80px"/>
+        </div>
+  
+        <div class="custMenu" style="">
+          <ul>
+  	    <li><a href="#">Contact</a></li>
+  	    <li><a href="#">About</a></li>
+  	    <li><a href="#">Blog</a></li>
+  	    <li><a href="#">Product</a></li>
+  	    <li><a class="active" href="#">Home</a></li>
+          </ul>
+        </div>
+        </div>
+	
+    </header>
+   
+    <!-- Banner Image-->
+    <div class = "imagePlaced">
+	<img src = "mm.jpg" alt = "no image placed" style = "width:960px;height:400px;" />
+        <h3> Loreum ipsum dolor sit amet,
+	     consecteteur adipiscing elit
+ 	     Aliquam ac duia praesent. 
+        </h3>
+	
+	<div class = "custButtonOne">
+		<button type = "button" style="">VIEW OUR PHONE</button>
+	</div> 
+	<div class = "custButtonSecond">
+		<button type = "button" style="">VIEW OTHER STUFF</button>
+	</div>
+        <img src = "m5.png" alt = "no image placed" style = "width:400px;height:400px;margin-top:-450px;margin-left:470px;" />
+          
+    </div>
+   
+    <!-- Session part-->
+    
+<div class="mainContent">
+ <h3 style="margin-left:20px;">Our Phones</h3>
+ <hr style="margin-top:-15px;width:920px"/>
+ <div class="custMainContent">
+	<div class="columnOne">
+		<a target="_blank" href="images\mobileone.jpg">
+		   <img src="mm.jpg" alt="no image" width="290px"/>
+		</a>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type 
+		specimen book.</p>
+		
+	</div>
+	<div class="columnTwo">
+		<a target="_blank" href="images\mobileone.jpg">
+		   <img src="mmm.jpg" alt="no image" width="290px"/>
+		</a>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type 
+		specimen book.</p>
+		
+	</div>
+	<div class="columnThree">
+		<a target="_blank" href="images\mobileone.jpg">
+		   <img src="mmmm.jpg" alt="no image" width="290px"/>
+		</a>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type 
+		specimen book.</p>
+		
+	</div>		
+ </div>
+<div class = "clear" style = "clear:both;"></div>
+  <hr/>
+
+ <div class="custSecondContent">
+	<div class="contentLeft">
+		<h4 style="padding:10px;">Curabitur bibendum magna. Donec velit,</h4>
+		<p style="padding-left:10px;margin-top:-10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<p/>
+		
+		<!-- Add image and text-->
+		<div class="contentLeftTwo">		  
+			<div class="imageLeft">
+				<img src="mm.jpg" alt="no image" width="90px" height="104px"/>
+			</div>
+			<div class="textRight" style="width:260px;background-color: #cce6ff;float:left;">
+				<p style="margin-left:10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text
+				</p>
+			</div>		  	   
+		 </div>  
+		 
+		<!-- Button click event-->
+		<div class="custButtonRight" style="width:150px;float:left;padding:5px;">
+			<button type="button" style="border-radius:5px;margin-left:30px;margin-top:20px;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"> MORE INFO </button>
+		</div>			
+	</div>
+	<div class="verticalLine" style=" border-left: 5px solid #ff0000;position:absolute;background-color:red;"></div>
+	<!--Right side content-->
+	<div class="contentRight" style="background-color:#FFFFFF;width:380px;float:left;margin-left:15px;">
+		<h3> Latest from the Blog</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		<div class="contentRightOne" style="background-color:#FFFFFF;width:370px;margin-bottom:10px;padding-bottom:70px;">		  
+			<div class="imgLeftOne" style="background-color:#ff99bb;width:70px;height:68px;float:left;"></div>
+			<div class="txtRightOne" style="background-color:#FFFFFF;width:280px;float:left;margin-left:10px;">
+				<p style = "margin:0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>  
+		<!-- Second column-->
+		<div class="contentRightTwo" style="background-color:red;width:370px;">		  
+			<div class="imgLeftTwo" style="background-color: #ffff4d;width:70px;height:68px;float:left;"></div>
+			<div class="txtRightTwo" style="background-color:#FFFFFF;width:280px;float:left;margin-left:10px;">
+				<p style = "margin:0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			</div>
+		</div>  
+	</div>
+ </div>
+ </div>
+<div class = "clear" style = "clear:both;"></div>
+
+<!-- footer part-->
+<footer>
+   <div class = "custFooter" style="background-color:#307c00;width:960px;float:left;margin-top:20px;">
+	<div class="cfColumnOne" style="width:200px;float:left;border-right:1px solid gray;margin-left:20px;">
+		<h2 style="color:#FFFFFF;padding-left:10px;">Mailing List</h2>
+		<input type = "text" name = "email" style="width:100px;margin-left:10px;padding:5px;" placeholder="Subscribe here"/>
+		<input type = "submit" name = "submit" value="Go" style="border-radius:10px;padding:5px 10px;"/>
+	</div>
+		
+	
+	<div class="cfColumnTwo" style="width:200px;float:left;border-right:1px solid gray;margin-left:20px;">
+		<h2 style="color:white;">Address</h2>
+		<address style="color:black;">
+			No. 89, 100 Feet Road,<br/> Chozhan Nagar, Puducherry
+		</address>
+	</div>
+	<div class="cfColumnThree" style="width:200px;float:left;border-right:1px solid gray;margin-left:20px;">
+		<h2 style="color:white;">ContactUS</h2>
+		<address style="color:black;">
+			0413-654321 <br/>adappt.co.uk<br/> 
+		</address>
+
+	</div>
+	<div class="cfColumnFour" style="width:220px;float:left;margin-left:20px;">
+		<h2 style="color:white;">Connect with US</h2>
+		<a href="#"><img src="twitter.png" alt="no image" width="40px" height="30px"/></a>
+		<span><a href="#"><img src="facebook.png" alt="no image" width="40px" height="30px" style="margin-left:5px;"/></a></span>
+		<span><a href="#"><img src="google-plus.png" alt="no image" width="40px" height="30px" style="margin-left:5px;"/></a></span>
+		<span><a href="#"><img src="blog.jpg" alt="no image" width="40px" height="30px" style="margin-left:5px;"/></a></span>
+	</div>
+	<div class = "clear" style = "clear:both;"></div>
+	<hr/>
+   	<p style="padding:5 10px;margin-left:20px"> \A9 copyright. All rights reserved. </p>
+   </div>
+   
+</footer>
+</body>
+
+</html>

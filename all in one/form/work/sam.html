@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<title> Registration Form  </title>
+<link rel="stylesheet" type="text/css" href="form/style.css">
+<script type="text/javascript">
+function validateForm()
+{
+
+	if((document.myForm.fName.value=="")){
+  	document.getElementById('fn').innerHTML = "First name should not be empty";
+  	document.myForm.fName.focus();
+  	return(false);
+ 	}
+
+ 	if((document.myForm.lName.value=="")){
+  	document.getElementById('ln').innerHTML = "Last name should not be empty";
+  	myForm.lName.focus();
+  	return(false);
+ 	}
+
+ 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.EMail.value))  
+    {  
+      return true;
+     }
+     {
+       document.getElementById('em').innerHTML="You have entered an invalid email address!";  
+       return false;
+      }  
+
+
+    if(myForm.pswd.value != "" && myForm.pswd.value == myForm.cpswd.value) {
+      if(myForm.pswd.value.length < 6) {
+       document.getElementById('pd').innerHTML="Error: Password must contain at least six characters!";
+        myForm.pswd.focus();
+        return false;
+      }
+      if(myForm.pswd.value == myForm.fName.value) {
+        document.getElementById('pd').innerHTML="Error: Password must be different from Username!";
+        myForm.pswd.focus();
+        return false;
+      }
+      re = /[0-9]/;
+      if(!re.test(myForm.pd.value)) {
+        document.getElementById('pd').innerHTML="Error: password must contain at least one number (0-9)!";
+        myForm.pswd.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.pd.value)) {
+        document.getElementById('pd').innerHTML="Error:password must contain at least one lowercase letter (a-z)!";
+        myForm.pswd.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.pwd1.value)) {
+       document.getElementById('pd').innerHTML="Error: password must contain at least one uppercase letter (A-Z)!";
+        myForm.pswd.focus();
+        return false;
+      }
+    } else {
+      document.getElementById('pd').innerHTML="Error: Please check that you've entered and confirmed your password!";
+      myForm.pswd.focus();
+      return false;
+    }
+
+    document.getElementById('pd').innerHTML="You entered a valid password: ";
+    return true;
+  }
+
+
+
+
+     var mobile = document.getElementById('mob');
+
+
+        if (document.myForm.mob.value == "" || document.myForm.mob.value == null) 
+        {
+            document.getElementById('mob').innerHTML ="Please enter your Mobile No.";
+            document.myForm.mob.focus() ;
+            return false;
+        }
+        if (document.myForm.mob.value.length < 10 || document.myForm.mob.value.length > 10) 
+        {
+           document.getElementById('mob').innerHTML ="Please Enter a Valid 10 Digit Mobile Number !!!";
+            document.myForm.mob.focus() ;
+            return false;
+        
+        }
+
+ 
+}
+</script>
+</head>
+<body>
+<h1> <center>Registration Form for Job Seekers </center></h1>
+<form name="myForm" action="" onsubmit="return (validateForm())" method="post">
+<font color='blue'>  </font>
+<table align="center" bgcolor="lightblue" border="0">
+
+	<tr>
+	 	<td><label>First Name </label></td>
+	 	<td> <input type="text" name="fName" placeholder="first name" >   <div id="fn"></div> </td>
+
+	</tr>
+
+	<tr>
+		<td><label> Last Name </label> </td>
+		<td><input type="text" name="lName" placeholder="last name"> <div id="ln"></div> </td>
+	</tr>
+
+	<tr>
+		<td><label>EMail</label></td>
+		<td><input type="text" name="EMail" placeholder="Email id"> <div id="em"></div> </td>
+	</tr>
+
+	<tr>
+		<td><label>Password</label></td>
+		<td><input type="text" name="pswd" placeholder="Password"> <div id="pd"></div> </td>
+	</tr>
+
+	<tr>
+		<td><label>Confirm Password</label></td>
+		<td><input type="text" name="cpswd" placeholder="Confirm Password"> <div id="cpd"></div> </td>
+	</tr>
+
+
+	<tr>
+		<td><label>Mobile Number</label></td>
+		<td><input type="text" name="mob" placeholder="Mobile Number"> <div id="mob"></div> </td>
+	</tr>
+
+	<tr> <td></td><td><right><input type="submit" value="submit"> <input type="submit" value="reset"> </right> </td></tr>
+
+</table>
+</body>
+</html>

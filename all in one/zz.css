@@ -1,0 +1,195 @@
+body{
+    width: 960px; 
+    margin: 0 auto;
+    background-color:white;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+log
+{
+float:left;
+   border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+
+}
+
+li {
+    float: right;
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+
+}
+
+.active {
+    border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+text-align: center;
+
+}
+
+#grad1 {
+
+    height: 255px;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,  lightgreen, palegreen, lightblue); /* Standard syntax (must be last) */
+ 
+background-repeat: no-repeat;
+background-position: right center;
+
+}
+
+
+p.hidden 
+{
+border-style: hidden;
+}
+
+
+h1 {
+    background-color: white;
+}
+
+
+.right {
+    position: absolute;
+    left: 0px;
+    width: 300px;    
+}
+
+
+hr
+{
+border-width:2px;
+}
+
+
+div.columns       { width: 960px; }
+div.columns div   { width: 320px; height: 200px; float: left; }
+div.grey          { background: linear-gradient(to right,  lightgreen,green, lightyellow);
+
+}
+div.red           { background: linear-gradient(to right,  violet,pink, pink) ;
+
+}
+div.blue {background: linear-gradient(to right,   skyblue, green,lightgreen);}
+div.clear         { background-color: both; }
+
+
+
+ .bottom{
+	
+	width:300px;
+	height:960px;
+	
+}
+.bottom h2{
+	margin-left:5px;
+}
+.lp{
+float:left;
+	width:500px;
+	
+	
+	
+}
+.lp p{
+	margin-left:10px;
+}
+.lp-bottom{
+	margin-top:10px;
+	border-radius:10px;
+	width:71%;
+	border:1px solid gray;
+	margin-left:10px;
+	background-color: lightblue;
+	 border-style: outset;
+	 border-color:gray;
+	 
+}
+.lp-bottom img{
+    float: left;
+     
+       margin: -15px 13px 21px 31px;
+}
+.b3 {
+    
+    
+    padding: 10px 19px;
+    text-align: center;
+
+     background-color: #e7e7e7; color: black;
+    font-size: 20px;
+    margin-top: -98px;
+    float: right;
+  
+    margin-right: 5%;
+}
+
+.rp{
+    float:left;
+	width: 400px;
+	height: 285px;
+	border-left-width:1px;
+	border-left-color: black;
+	margin-bottom:200px;
+}
+.rp-c1 p{
+	margin-top:20px;
+	width:80%;	
+	margin-left:30px;	
+}
+.rp-c1 img{
+	 float: left;
+     
+    margin: -29px 6px 21px 25px;
+}
+.rp-c2 p{
+	margin-top:40px;
+	
+	width:80%;
+	
+	margin-left:30px;
+	
+	 
+}
+.rp-c2 img{
+	 float: left;
+     
+   margin: -32px 4px 12px 25px;
+}
+
+
+
+
+

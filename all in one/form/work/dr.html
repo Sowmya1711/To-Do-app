@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- Scripting-->
+	<script type="text/javascript">
+		function formValidation(){
+
+		//firstName validate
+     	if (document.myForm.fname.value == "") {
+			//alert("Please enter firstName");
+        	document.getElementById('errorFirstName').innerHTML = "Please Enter firstname";
+			document.myForm.fname.focus();
+			return false;        
+		} else{
+			
+		}
+
+		//lastName validate
+		if (document.myForm.lname.value == "") {
+			//alert("Please enter lastname");
+         document.getElementById('errorLastName').innerHTML = "Please Enter lastname";
+			document.myForm.lname.focus();
+			return false;
+		}else{
+			document.getElementById('errorLastName').innerHTML ="";
+		}
+
+		//gender validate
+		if ( ( myForm.gender[0].checked == false ) && ( myForm.gender[1].checked == false ) ) {
+			//alert ( "Please choose your Gender: Male or Female" ); 			
+        document.getElementById('errorGender').innerHTML = "Please choose your Gender: Male or Female";	
+			return false;
+		}else{
+			document.getElementById('errorGender').innerHTML ="";
+		}
+
+		//email validate
+		var email = document.getElementById('txtEmail');
+    	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    	if (!filter.test(email.value)) {
+    		//alert('Please provide a valid email address');
+    		//email.focus;
+      	document.getElementById('errorEmail').innerHTML = "Please provide a valid email address";
+    		document.myForm.email.focus();
+    		return false;
+    	}else{
+			document.getElementById('errorEmail').innerHTML ="";
+		}				
+
+		//phonenumber validate
+		var mobile = document.getElementById('phoneNumber');
+		var phoneNum  = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+		if (!mobile.value.match(phoneNum)) {
+			document.getElementById('errorPhoneNumber').innerHTML = "Please enter valid Phone number";
+			document.myForm.phone.focus();
+			return false;
+		}else{
+			document.getElementById('errorPhoneNumber').innerHTML="";
+		}	
+
+    	//job designation validate
+   	if (document.myForm.jobRole.value=="0") {
+    		//alert("Please choose job designation");
+        	document.getElementById('errorJobRole').innerHTML = "Please Choose Job designation";
+    		return false;
+    	}else{
+			document.getElementById('errorJobRole').innerHTML ="";
+		}
+      
+      //choosing technology
+      if (document.myForm.technology.value == "") {
+       	//alert("Please select tech Place.!");
+       	document.getElementById('errorTechnology').innerHTML = "Please technology from list";
+       	return false;
+     	}else{
+			document.getElementById('errorTechnology').innerHTML ="";
+		} 
+
+      //password validation
+      var psw = document.myForm.psw.value; 
+      var pswRegex = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/);
+      if (psw == "") {
+        //alert("Please fill the password !");
+        document.getElementById('errorPassword').innerHTML = "Please fill password ";
+        document.myForm.psw.focus();
+        return false;
+      }else if(psw.length < 6){
+        //alert("Password strength maximum 6 digit !");
+        document.getElementById('errorPassword').innerHTML = "Password maximum 6 digit required";
+        document.myForm.psw.focus();
+        return false;
+      }else if (psw.match(pswRegex)) {
+      	document.getElementById('errorPassword').innerHTML = "Password should contain special character";
+        document.myForm.psw.focus();
+      }
+      else{
+			document.getElementById('errorPassword').innerHTML ="";
+		}	
+
+		//confirm password
+		var cpass = document.myForm.cpsw.value;
+		if (cpass == "") {
+			document.getElementById('errorConfirmPassword').innerHTML = "enter confirm password !";
+		} else if (psw != cpsw) {
+			document.getElementById('errorConfirmPassword').innerHTML = "password not matching !";
+		}
+		
+
+     //checkbox validation
+      if (!document.myForm.accept.checked) {
+          alert("You must agree to the terms and conditions !!");
+          return false;
+      }     
+        
+		}
+
+		function firstNameFunction() {
+			document.getElementById('errorFirstName').innerHTML="";
+		}
+		function lastNameFunction(){
+			document.getElementById('errorLastName').innerHTML="";
+			
+		}
+		function genderFunction(){
+			alert("done !!");
+			//document.getElementById('errorGender').innerHTML="";
+		}
+		function emailFunction(){
+			document.getElementById('errorEmail').innerHTML="";
+		}
+		function phoneFunction(){
+			document.getElementById('errorPhoneNumber').innerHTML="";
+		}et
+		function jobdesignationFunction(){
+			document.getElementById('errorJobRole').innerHTML="";
+		}
+		function techFunction(){
+			document.getElementById('errorTechnology').innerHTML="";
+		}
+		function pswFunction(){
+			document.getElementById('errorPassword').innerHTML="";
+		}
+		function cpswFunction(){
+			document.getElementById('errorConfirmPassword').innerHTML="";
+		}
+	</script>
+</head>
+<body>
+	<h1>Form validation in js</h1><br/>
+	<form action="" method="get" name="myForm" onsubmit="return(formValidation());">
+
+	 <table>
+		  <tr>
+		   <td><label>FirstName : </label></td>
+		   <td>
+          <input type = "text" name = "fname"  onkeypress="firstNameFunction();" /> 
+          <div id="errorFirstName" style="color: red;"></div> 
+       </td> 
+		 	</tr>
+ 
+			 <tr> 
+			  <td><label>LastName : </label></td>
+			  <td>
+          <input type = "text" name = "lname" onkeypress="lastNameFunction();" /> <br/>
+          <div id="errorLastName" style="color: red;"></div> 
+        </td> 
+			 </tr>
+
+
+			 <tr>	
+			  <td><label> Gender : </label></td>
+			  <td>
+			    <input type = "radio" name = "gender" value = "Male" onkeypress="genderFunction();" /> Male
+			    <input type = "radio" name = "gender" value = "Female" onkeypress="genderFunction();"/> Female 
+          <div id="errorGender" style="color: red;"></div>
+			  </td>
+			 </tr> 
+
+
+			 <tr>
+			   <td> <label> Email ID : </label> </td>
+			   <td> 
+            <input type = "text" name = "email" id="txtEmail" onkeypress="emailFunction();" /> 
+            <div id="errorEmail" style="color: red;"></div>
+         </td>
+			 </tr>
+
+			 <tr>
+			   <td> <label> Phone number : </label> </td>
+			   <td> 
+            <input type = "text" name = "phone" id="phoneNumber" onkeypress="phoneFunction();" /> 
+            <div id="errorPhoneNumber" style="color: red;"></div>
+         </td>
+			 </tr>
+
+			 <tr>
+				  <td><label> Job Designation : </label> </td>
+				 	<td> 
+					  <select name="jobRole" onkeypress="jobdesignationFunction();">
+					   <option value="0" selected> --Choose your designation--</option>
+					   <option value="1"> UI Designer </option>
+					   <option value="2"> Developer </option>
+					   <option value="3"> Tester </option>
+					   <option value="4"> Networking </option>
+					  </select> 
+            <div id="errorJobRole" style="color: red;"></div>
+					</td>
+			 </tr>
+
+			 <tr>
+				 <td><label> Technology </label></td>
+				 <td>
+            <input type="text" list= "tech" name="technology" autocomplete="off" placeholder="Choose technology" onkeypress="techFunction();">
+					     <datalist id="tech">					  
+					       <option value="Angular"></option>
+					 	     <option value="Node"></option>
+					       <option value="React"></option>  
+					     </datalist> 
+           <div id="errorTechnology" style="color: red;"></div>
+					</td>
+			 </tr> 
+
+			 <tr>
+			 		<td><label>Password : </label></td>
+			 		<td>
+              <input type="password" name="psw" onkeypress="pswFunction();" />
+              <div id="errorPassword" style="color: red;"></div>
+          </td> 
+			 </tr>
+
+			 <tr>
+			 		<td><label>Confirm Password : </label></td>
+			 		<td>
+              <input type="password" name="cpsw" onkeypress="cpswFunction();" />
+              <div id="errorConfirmPassword" style="color: red;"></div>
+          </td> 
+			 </tr>
+
+			 <tr>
+			  <td><label> Comments : </label> </td>
+			  <td>
+            <textarea name = "message" rows="5" cols="30" minlength="30" maxlength="120"> </textarea> </br> </br>
+            <div id="errorComments" style="color: red;"></div>
+			 </tr>
+
+			 <tr>
+			 	<td>
+			 		<input type="checkbox" name="accept"  /> I have agree all information.
+			 	</td>
+			 </tr> 
+
+ <tr>
+ 	<td></td>
+ 	<td>
+ 		<center>
+ 			<input type = "submit" name = "submit" value="Register" /> 
+ 		</center> 
+ 	</td>	
+ 	<td></td>
+ </tr>
+ </table>
+
+ </form>
+</body>
+</html>

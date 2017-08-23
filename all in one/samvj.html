@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+    width: 960px; 
+    margin: 0 auto;
+    background-color:white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+log
+{
+float:left;
+   border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+
+}
+.active {
+    border-radius: 10px;
+    background: gray;
+    padding: 20px; 
+    width: 30px;
+    height: -0px;
+text-align: center;
+}
+#grad1 {
+
+    height: 255px;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,  lightgreen, palegreen, lightblue); /* Standard syntax (must be last) */
+ 
+background-repeat: no-repeat;
+background-position: right center;
+}
+
+.Parent
+{
+background-color:white;
+width:960px;
+}
+.ChildOne
+{
+border:2px light blue;
+width:310px;
+float:left;
+}
+.ChildTwo
+{
+border:2px light blue;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.ChildThree
+{
+border:2px gray;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.clear         
+{ 
+background-color: both; 
+}
+
+.secondparent
+{
+background-color:white;
+width:960px;	
+}
+
+.secondleft
+{
+background-color:white;
+width:550px;
+float:left;
+border-right:1px solid black;
+
+}
+
+.h4
+{
+padding:10px;
+}
+
+.p
+{
+padding-left:10px;
+margin-top:-10px;
+}
+
+.secondlefttwo
+{
+background-color: #fff;
+width:350px;
+float:left;
+border:2px solid gray;
+border-radius:5px;
+padding:2px;
+}
+
+.imgleft
+{
+background-color: #FFFFFF;
+float:left;
+}
+.container-fluid{
+width:1180px;
+margin:0 auto;
+}
+.clear{
+clear:both;}
+
+</style>
+</head>
+<body>
+
+    <div class="log">
+        
+    <ul>
+        <img src="dr.png" height="52"></img>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#blog">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Blog</a></li>
+        <li><a href="#news">Products</a></li>
+    </ul>
+    </div>
+    <div id="grad1" style="text-align:left;margin:auto;color:white;font-size: 40px;">
+        <img src="m6.png" align ="right" width="30%" ></img>
+    </div>
+
+    <p class="hidden"><b><strong><h3>Our Phones</h3><hr></strong><b></p>
+
+<div class = "Parent clear" style="clear:both;">
+
+    <div class = "ChildOne">
+        <div>
+            <img src="mm.jpg" height="250px" width="310px">
+        </div>
+        <div>
+            <h3>CSS Font</h3>   
+            <p>Being able to manage the text size is important in web design.
+            Font size adjustments to make paragraphs look like headings.<p> 
+        </div>
+    </div>
+
+    <div class = "ChildTwo">
+        <div>
+            <img src="mmm.jpg" height="250px" width="310px">
+        </div>
+        <div>
+            <h3>CSS Font</h3>   
+            <p>Being able to manage the text size is important in web design.
+            Font size adjustments to make paragraphs look like headings.<p> 
+        </div>
+    </div>
+
+
+    <div class = "ChildThree">
+        <div>
+            <img src="mmmm.jpg" height="250px" width="310px">
+        </div>
+        <div>
+            <h3>CSS Font</h3>   
+            <p>Being able to manage the text size is important in web design.
+            Font size adjustments to make paragraphs look like headings.<p> 
+        </div> 
+    </div>
+
+    <div class="clear" style="clear:both;"></div>
+</div>
+<hr>
+<div class="secondparent">
+
+    <div class="secondleft">
+    <div>
+        <h4>HTML and CSS</h4>
+        <p >Being able to manage the text size is important in web design.
+        Font size adjustments to make paragraphs look like headings.<p/>
+	</div>
+	<div class="secondlefttwo">		  
+		<div class="imgleft">
+			<img src="mm.jpg" alt="no image" width="90px" height="104px"/>
+		</div>
+		<div class="textright" style="width:260px;background-color: #cce6ff;float:left;">
+			<p style="margin-left:10px;">Being able to manage the text size is important in web design.
+            Font size adjustments to make paragraphs look like headings.</p>
+        </div>
+    </div>		
+</div>
+
+</body>
+</html>
+

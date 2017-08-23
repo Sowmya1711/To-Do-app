@@ -1,0 +1,341 @@
+body{
+width: 960px; 
+margin: 0 auto;
+}
+
+.navigation
+{
+background-color:rgba(128, 128, 128, 0.55);
+width:960px;
+position:absolute;
+	z-index:11;
+}
+
+.logo
+{
+width:260px;
+height:auto;
+float:left;
+}
+
+.menu
+{
+width:700px;
+margin-left:230px;
+}
+
+
+ul 
+{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+li 
+{
+float: right;
+}
+
+
+li a
+{
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+background-color: black;
+border-radius: 10px;
+padding:10px 12px;
+}
+
+.active
+{
+background-color: black;
+border-radius: 10px;
+padding:10px 12px;
+}
+
+
+.bb {
+    width: 960px;
+    height: 19px;
+    position: relative;
+    margin: -35px 1px -9px 0px;
+    background-color: rgb(221, 221, 221);
+    /* margin-top: -13px; */
+    z-index: 11111;
+    /* position: relative; */
+    opacity: 0.3;
+}
+
+.image h3
+{
+color:#FFFFFF;
+position:absolute;
+display:block;
+font-size:30px;
+margin-top:-290px;
+margin-left:30px; 
+width:400px;  
+text-align:justify;       
+}
+
+	
+.buttonone
+{
+position:absolute;           
+margin-top:-113px;
+padding:10 20px;
+border-radius:5px;
+}
+.buttontwo
+{
+position:absolute;           
+margin-top:-113px;
+margin-left:230px;
+padding:10 20px;
+border-radius:5px;
+	}
+
+.Parent
+{
+background-color:white;
+width:960px;
+
+}
+.ChildOne
+{
+border:2px light blue;
+width:310px;
+float:left;
+}
+.ChildTwo
+{
+border:2px light blue;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.ChildThree
+{
+border:2px gray;
+width:310px;
+
+float:left;
+margin-left:5px;
+}
+
+.clear         
+{ 
+background-color: both; 
+}
+
+.secondparent
+{
+background-color:white;
+width:960px;	
+}
+
+.secondleft
+{
+background-color:white;
+width:550px;
+float:left;
+
+border-right: 2px rgba(132, 128, 128, 0);
+box-shadow: 1px 0px 0px 0px;
+
+}
+
+.h4
+{
+padding:10px;
+}
+
+.p
+{
+padding-left:10px;
+margin-top:-10px;
+}
+
+.secondlefttwo
+{
+background-color: white;
+width:340px;
+
+float:left;
+border:2px solid rgba(128, 128, 128, 0);
+border-radius:14px;
+padding:-2px;
+ box-shadow: 1px 1px 1px 1px;
+}
+
+
+.imgleft
+{
+background-color: #FFFFFF;
+float:left;
+}
+
+.clear{
+clear:both;
+}
+
+.buttonone button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:20px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+float:left;
+}
+.buttontwo button
+{
+border:1px solid gray;
+border-radius:10px;
+margin-left:20px;
+margin-top:20px;
+padding-left:15px;
+padding-right:15px;
+padding-top:10px;
+padding-bottom:10px;
+}
+.buttonone button:hover,
+.buttontwo button:hover
+{
+cursor:pointer;
+border:2px solid black;
+}
+
+.custButtonRight button:hover
+{
+cursor:pointer; 
+}
+
+.right
+{
+background-color:#FFFFFF;
+width:380px;
+float:left;
+margin-left:15px;
+}
+
+.right-text
+{
+background-color:#FFFFFF;
+width:370px;
+margin-bottom:10px;
+padding-bottom:70px;
+}
+
+.imgleft1
+{
+background-color:#ff99bb;
+width:70px;
+height:68px;
+float:left;
+box-shadow: 2px 2px 1px 1px;
+}
+
+.txtrightone
+{
+
+width:235px;
+float:left;
+margin-left:10px;
+ border-radius: 0px 9px 9px 0px;
+    
+
+
+}
+
+.imgleft2
+{
+background-color: #ffff4d;
+width:70px;
+height:68px;
+float:left;
+box-shadow: 2px 2px 1px 1px;
+}
+
+.txtright2
+{
+background-color:#FFFFFF;
+width:280px;
+float:left;
+margin-left:10px;
+}
+
+.foot
+{
+background: linear-gradient(to right, #2d7729, rgba(10, 145, 141, 0.26) , #32c4d3);
+width:960px;
+float:left;
+margin-top:20px;
+}
+
+.colone
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+
+}
+
+.coltwo
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+
+}
+
+.colthree
+{
+width:200px;
+float:left;
+border-right:1px solid gray;
+margin-left:20px;
+
+}
+
+.colfour
+{
+width:220px;
+float:left;
+margin-left:20px;
+
+}
+
+.txtright
+{
+width: 235px;
+    
+
+float:left;
+margin-left:10px;
+ border-radius: 0px 9px 9px 0px;
+    background-color: rgba(135, 206, 235, 0.32);
+}
+
+
+.input[type=text] {
+background-color: 4e8e4d;
+}

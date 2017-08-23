@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<title> Registration Form  </title>
+<link rel="stylesheet" type="text/css" href="form/style.css">
+<script type="text/javascript">
+function regvalidate()
+
+{
+if((document.registerationform.fnametxt.value=="")&&(document.registerationform.snametxt.value==""))
+ {
+  document.getElementById('une').innerHTML = "First name or Second name should not be empty";
+  registerationform.fnametxt.focus();
+  return(false);
+ }
+
+if(document.registerationform.unametxt.value=="")
+  {
+  document.getElementById('une').innerHTML = "User name field should not be empty";
+  registerationform.unametxt.focus();
+  return(false);
+ }
+
+if(document.registerationform.emailtxt.value=="")
+  {
+  document.getElementById('une').innerHTML = "Email id requered";
+  registerationform.emailtxt.focus();
+  return(false);
+  }
+
+if(document.registerationform.pwdtxt.value=="")
+   {
+  document.getElementById('une').innerHTML = "Please type a password";
+  registerationform.pwdtxt.focus();
+  return(false);
+   }
+
+if((document.registerationform.pwdtxt.value) != (document.registerationform.cpwdtxt.value))
+   {
+  document.getElementById('une').innerHTML = "Password Must be equal";
+  registerationform.pwdtxt.value = "";
+  registerationform.cpwdtxt.value = "";
+  registerationform.pwdtxt.focus();
+  return(false);
+  }
+else
+   {
+   return(true);
+   }
+}
+</script>
+</head>
+<body>
+<h1> <center>Registration Form for Job Seekers </center></h1>
+<form name="myForm" action="" onsubmit="return (validateForm())" method="post">
+
+<table align="center" bgcolor="lightblue" border="0">
+
+<form name = "registerationform" method="POST" action="welcome.html" onsubmit="return(regvalidate())">
+<table>
+	<tr>
+	<td>First Name: </td> <td><input type = "text" name="fnametxt" /><br/> </td>
+	</tr>
+
+	<tr>
+	<td>Second Name: </td> <td> <input type = "text" name="snametxt" /><br/></td>
+	</tr>
+
+	<tr>
+	<td> User Name:</td> <td><input type = "text" name="unametxt" /><br/> </td>
+	</tr>
+	
+	<tr>
+	<td>Email Address: </td> <td> <input type = "text" name="emailtxt" /><br/></td>
+	</tr>
+
+	<tr>
+	<td> Password : </td> <td> <input type = "password" name="pwdtxt" /> <br/> </td>
+	</tr>
+
+	<tr>
+	<td> Confirm : </td> <td> <input type = "password" name="cpwdtxt" /> <br/> </td>
+	</tr>
+
+</table>
+
+<font color='red'> <DIV id="une"> </DIV> </font>
+<input type = "submit" value="Register Now" />
+</form>
+
+</table>
+
+</body>
+</html>
